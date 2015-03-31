@@ -1,0 +1,20 @@
+<head>
+    <title>testProject</title>
+</head>
+
+<body>
+    <h3>Form Test</h3>
+    {{> insertBookForm}}
+    <div style="background-color: red; margin-top: 10px">
+        Div Box after the form with some content in it.<br>
+        Div Box after the form with some content in it.<br>
+        Div Box after the form with some content in it.<br>
+        Div Box after the form with some content in it.<br>
+        Div Box after the form with some content in it.<br>
+        Div Box after the form with some content in it.<br>
+    </div>
+</body>
+
+<template name="insertBookForm">
+    {{> quickForm collection="Books" id="insertBookForm" type="update" doc=doc}}
+</template>
